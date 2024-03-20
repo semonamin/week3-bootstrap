@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href='node_modules/bootstrap/dist/css/bootstrap.css'>
+  </head>
+<body>
+  <h1>Order here</h1>
+  <div>
+    <a href="index.html">Home</a>
+    
+    <a href="order form.html">Order here</a>
+  </div>
+  <!-- Bootstrap table for the price and quantity -->
+  <div class="container">
+    <h2>Our Price List</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Cookie Type</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sinkerdoodles</td>
+          <td>$5.99</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Chocolate chip</td>
+          <td>$7.99</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Vanilla cookie</td>
+          <td>$6.99</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap form for ordering cookies -->
+  <div class="container">
+    <h2>Order Here</h2>
+    <form>
+      <div class="form-group">
+        <h3>Choose Your Cookie Type</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="cookieType" id="sinkerdoodle" value="sinkerdoodle">
+          <label class="form-check-label" for="sinkerdoodle">Sinkerdoodle</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="cookieType" id="chocolateChip" value="chocolateChip">
+          <label class="form-check-label" for="chocolateChip">Chocolate Chip</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="cookieType" id="vanillaCookie" value="vanillaCookie">
+          <label class="form-check-label" for="vanillaCookie">Vanilla Cookie</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <h3>Choose Your Quantity</h3>
+        <input type="number" class="form-control" id="quantity" placeholder="Quantity">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Order</button>
+    </form>
+  </div>
+
+  
+</body>
+</html>
